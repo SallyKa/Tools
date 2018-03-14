@@ -19,7 +19,7 @@ def move(my_history, their_history, my_score, their_score):
     '''
 
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
-    # their_history: a string of the same length as history, possibly empty. 
+    # their_history: a string of the same length as history, possible to be empty. 
     # The first round between these two players is my_history[0] and their_history[0].
     # The most recent round is my_history[-1] and their_history[-1].
     
@@ -41,7 +41,7 @@ def test_move(my_history, their_history, my_score, their_score, result):
         print("move(" +
             ", ".join(["'"+my_history+"'", "'"+their_history+"'",
                        str(my_score), str(their_score)])+
-            ") returned " + "'" + real_result + "'" +
+            "( returned " + "'" + real_result + "'" +
             " and should have returned '" + result + "'")
         return False
 
